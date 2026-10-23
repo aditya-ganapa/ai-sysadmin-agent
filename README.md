@@ -7,7 +7,7 @@ An autonomous, human-in-the-loop infrastructure management agent designed to mon
 ## 🚀 Architectural Flow (The Agentic Loop)
 This project moves beyond passive text generation by implementing a complete autonomous agent cycle:
 1. **Perceive:** Gathers real-time host metrics (CPU, RAM, Disk) using `psutil`.
-2. **Reason:** Feeds raw metrics to **Google Gemini (`gemini-2.5-flash`)** to act as a senior Linux system administrator.
+2. **Reason:** Feeds raw metrics to **Google Gemini (`gemini-3.8-flash`)** to act as a senior Linux system administrator.
 3. **Plan:** The LLM analyzes the state and formulates a specific, safe CLI command to resolve bottlenecks.
 4. **Safety Gate:** Pauses execution and requires explicit human approval (`y/n`) before touching the host system.
 5. **Act:** Securely runs the approved command via Python's `subprocess` module and reports back results.
